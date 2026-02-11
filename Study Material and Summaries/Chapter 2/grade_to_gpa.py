@@ -1,0 +1,41 @@
+grade = float(input("Enter your numerical grade (0 - 100)"))
+if grade >= 96:
+     gpa = 4.0
+     letter = "A"
+elif grade >=93:
+     gpa = 3.7
+     letter = "A-"
+elif grade >= 90:
+     gpa = 3.3
+     letter = "B+"
+elif grade >= 87:
+     gpa = 3.0
+     letter ="B"
+elif grade >= 83:
+     gpa = 2.7
+     letter ="B-"
+elif grade >= 80:
+     gpa = 2.3
+     letter ="C+"
+elif grade >= 77:
+     gpa = 2.0
+     letter ="C"
+elif grade >= 73:
+     gpa = 1.7
+     letter ="C-"
+elif grade >= 70:
+     gpa = 1.3
+     letter ="D+"
+elif grade >= 67:
+     gpa = 1.0
+     letter ="D"
+elif grade >= 63:
+     gpa = 0.7
+     letter ="D-"
+else: 
+     gpa = 0.0
+     letter = "F"
+print(f"Your grade is {grade} and your GPA is {gpa} and your letter grade is {letter}")
+
+
+
