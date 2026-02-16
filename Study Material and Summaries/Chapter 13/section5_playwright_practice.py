@@ -1,21 +1,28 @@
 # Section 5: Playwright Browser Control - Practice
 
-# Q1: Import sync_playwright from playwright.sync_api
+# Q1: First install Playwright by running: python -m pip install playwright
+# Then run: playwright install firefox
+# Then import sync_playwright from playwright.sync_api
 # WHAT IT DOES: Playwright controls browsers with modern features like headless mode
 # ┌─ EXAMPLE ─────────────
 # │ from playwright.sync_api import sync_playwright
 # └───────────────────────
+from playwright.sync_api import sync_playwright
 
 
 
 
-# Q2: Create variable named playwright using sync_playwright().start(), then create browser using playwright.firefox.launch() with headless=False and slow_mo=50, then create page using browser.new_page()
+# Q2: Create variable named playwright using sync_playwright().start(), then create browser using playwright.firefox.launch() 
+# with headless=False and slow_mo=50, then create page using browser.new_page()
 # WHAT IT DOES: start() initializes Playwright; launch() opens browser; new_page() creates tab
 # ┌─ EXAMPLE ─────────────
 # │ pw = sync_playwright().start()
 # │ br = pw.chromium.launch(headless=False, slow_mo=50)
 # │ pg = br.new_page()
 # └───────────────────────
+playwright = sync_playwright().start()
+browser = playwright.firefox.launch(headless=False, slow_mo=50)
+page = browser.new_page()
 
 
 
@@ -26,7 +33,8 @@
 # │ page.goto('https://nostarch.com')
 # │ print(page.title())
 # └───────────────────────
-
+page.goto('https://autbor.com/example3.html')
+print(page.title())
 
 
 
@@ -36,7 +44,8 @@
 # │ headers = page.locator('h1')
 # │ print(headers.count())
 # └───────────────────────
-
+p_elems = page.locator('p')
+print(p_elems.count())
 
 
 

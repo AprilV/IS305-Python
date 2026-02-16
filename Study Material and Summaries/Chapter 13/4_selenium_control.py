@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 # Start browser
-browser = webdriver.Firefox()
+browser = webdriver.Edge()
 browser.get('https://autbor.com/example3.html')
 
 # Find element by ID

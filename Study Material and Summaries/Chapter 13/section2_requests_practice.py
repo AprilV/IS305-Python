@@ -1,8 +1,9 @@
 # Section 2: requests Module - Practice
 
-# Q1: Import requests module
+# Q1: First install requests by running this in terminal: python -m pip install requests
+# Then import requests module
 # WHAT IT DOES: requests module downloads files and web pages from the internet
-
+import requests
 
 
 
@@ -13,7 +14,8 @@
 # │ response = requests.get('https://nostarch.com')
 # │ response.raise_for_status()
 # └───────────────────────
-
+res = requests.get('https://automatetheboringstuff.com/files/rj.txt')
+res.raise_for_status()
 
 
 
@@ -23,7 +25,8 @@
 # │ print(response.status_code)
 # │ print(response.status_code == requests.codes.ok)
 # └───────────────────────
-
+print(res.status_code)
+print(res.status_code == requests.codes.ok)
 
 
 
@@ -33,7 +36,8 @@
 # │ print(len(response.text))
 # │ print(response.text[:150])
 # └───────────────────────
-
+print(len(res.text))
+print(res.text[:200])
 
 
 
@@ -46,7 +50,11 @@
 # │ except Exception as exc:
 # │     print(f'Error: {exc}')
 # └───────────────────────
-
+page = requests.get('https://nostarch.com')
+try:
+    page.raise_for_status()
+except Exception as exc:
+    print(f'error: {exc}')
 
 
 
@@ -59,7 +67,10 @@
 # │     for chunk in data.iter_content(100000):
 # │         f.write(chunk)
 # └───────────────────────
-
-
+data = requests.get('https://automatetheboringstuff.com/files/rj.txt')
+data.raise_for_status()
+with open('downloaded.txt', 'wb') as f:
+    for chunk in data.iter_content(100000):
+          f.write(chunk)
 
 

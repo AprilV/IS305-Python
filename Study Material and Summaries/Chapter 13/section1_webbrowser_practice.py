@@ -2,7 +2,7 @@
 
 # Q1: Import webbrowser module
 # WHAT IT DOES: webbrowser module opens URLs in your web browser
-
+import webbrowser
 
 
 
@@ -12,17 +12,19 @@
 # │ import webbrowser
 # │ webbrowser.open('https://example.com')
 # └───────────────────────
+webbrowser.open('https://nostarch.com')
 
 
 
-
-# Q3: Create variable named search_term with value 'Python programming', then use webbrowser.open() to open Google search for that term using URL 'https://www.google.com/search?q=' + search_term
+# Q3: Create variable named search_term with value 'Python programming', then use webbrowser.open() to open Google search for that 
+# term using URL 'https://www.google.com/search?q=' + search_term
 # WHAT IT DOES: Opens a Google search by building the search URL with your search term
 # ┌─ EXAMPLE ─────────────
 # │ query = 'web scraping'
 # │ webbrowser.open('https://www.google.com/search?q=' + query)
 # └───────────────────────
-
+search_term = 'python programming'
+webbrowser.open('https://www.google.com/search?q=' + search_term)
 
 
 
@@ -32,7 +34,8 @@
 # │ location = '456 Oak Ave, Seattle, WA'
 # │ webbrowser.open('https://www.openstreetmap.org/search?query=' + location)
 # └───────────────────────
-
+street_address = '123 Main St, Boston, MA'
+webbrowser.open('https://www.openstreetmap.org/search?query=' + street_address)
 
 
 
@@ -41,7 +44,7 @@
 # ┌─ EXAMPLE ─────────────
 # │ webbrowser.open('file:///C:/Users/YourName/Desktop/info.html')
 # └───────────────────────
-
+webbrowser.open('file:///C:/Users/YourName/Documents/test.html')
 
 
 

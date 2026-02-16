@@ -1,24 +1,27 @@
 # Section 4: Selenium Browser Control - Practice
 
-# Q1: Import webdriver from selenium, By from selenium.webdriver.common.by, and Keys from selenium.webdriver.common.keys
+# Q1: Import webdriver from selenium, By from selenium.webdriver.common.by, and Keys from selenium.webdriver.common.keys install selenium: python -m pip install selenium
 # WHAT IT DOES: Selenium's webdriver controls the browser; By helps find elements; Keys simulates keyboard
 # ┌─ EXAMPLE ─────────────
 # │ from selenium import webdriver
 # │ from selenium.webdriver.common.by import By
 # │ from selenium.webdriver.common.keys import Keys
 # └───────────────────────
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 
 
-
-# Q2: Create variable named browser using webdriver.Firefox(), then use browser.get() to navigate to 'https://autbor.com/example3.html'
-# WHAT IT DOES: webdriver.Firefox() launches Firefox browser; get() navigates to a URL
+# Q2: Create variable named browser using webdriver.Edge(), then use browser.get() to navigate to 'https://autbor.com/example3.html'
+# WHAT IT DOES: webdriver.Edge() launches Microsoft Edge browser; get() navigates to a URL
 # ┌─ EXAMPLE ─────────────
-# │ driver = webdriver.Firefox()
+# │ driver = webdriver.Edge()
 # │ driver.get('https://nostarch.com')
 # └───────────────────────
 
-
+browser = webdriver.Edge()
+browser.get('https://autbor.com/example3.html')
 
 
 # Q3: Use browser.find_element() with By.ID and 'author' to find element with id="author", store in variable named author_elem
@@ -26,17 +29,18 @@
 # ┌─ EXAMPLE ─────────────
 # │ title = browser.find_element(By.ID, 'main')
 # └───────────────────────
+author_elem = browser.find_element(By.ID, 'author')
 
 
 
-
-# Q4: Print author_elem.tag_name and author_elem.text
+# Q4: Use print() to display the tag_name property of author_elem, then use print() again to display the text property of author_elem
 # WHAT IT DOES: tag_name shows the HTML tag (like 'span'); text shows the content between tags
 # ┌─ EXAMPLE ─────────────
 # │ print(title.tag_name)
 # │ print(title.text)
 # └───────────────────────
-
+print(author_elem.tag_name)
+print(author_elem.text)
 
 
 
@@ -46,7 +50,8 @@
 # │ headers = browser.find_elements(By.TAG_NAME, 'h1')
 # │ print(len(headers))
 # └───────────────────────
-
+paragraphs = browser.find_elements(By.TAG_NAME, 'p')
+print(len(paragraphs))
 
 
 
@@ -56,7 +61,8 @@
 # │ button = browser.find_element(By.LINK_TEXT, 'Click here')
 # │ button.click()
 # └───────────────────────
-
+link = browser.find_element(By.LINK_TEXT, 'This text is a link')
+link.click()
 
 
 
@@ -65,7 +71,7 @@
 # ┌─ EXAMPLE ─────────────
 # │ browser.back()
 # └───────────────────────
-
+browser.back()
 
 
 
@@ -75,7 +81,8 @@
 # │ email = browser.find_element(By.ID, 'email_field')
 # │ email.send_keys('test@example.com')
 # └───────────────────────
-
+username = browser.find_element(By.ID, 'login_user')
+username.send_keys('aprilv120@gmail.com')
 
 
 
@@ -87,7 +94,9 @@
 # │ pwd.submit()
 # └───────────────────────
 
-
+password = browser.find_element(By.ID, 'login_pass')
+password.send_keys('mypassword')
+password.submit()
 
 
 # Q10: Use browser.find_element() with By.TAG_NAME and 'html' to get the html element, store in variable named html, then use send_keys() with Keys.END and Keys.HOME to scroll
@@ -97,7 +106,9 @@
 # │ page.send_keys(Keys.END)
 # │ page.send_keys(Keys.HOME)
 # └───────────────────────
-
+html = browser.find_element(By.TAG_NAME, 'html')
+html.send_keys(Keys.END)
+html.send_keys(Keys.HOME)
 
 
 
