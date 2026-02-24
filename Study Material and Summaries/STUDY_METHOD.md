@@ -1,28 +1,166 @@
 # IS 305 Python Study Method - Comprehensive Teaching Protocol
 
+═══════════════════════════════════════════════════════════════════════════════
+██████╗ ███████╗ █████╗ ██████╗     ████████╗██╗  ██╗██╗███████╗    ███████╗██╗██████╗ ███████╗████████╗
+██╔══██╗██╔════╝██╔══██╗██╔══██╗    ╚══██╔══╝██║  ██║██║██╔════╝    ██╔════╝██║██╔══██╗██╔════╝╚══██╔══╝
+██████╔╝█████╗  ███████║██║  ██║       ██║   ███████║██║███████╗    █████╗  ██║██████╔╝███████╗   ██║   
+██╔══██╗██╔══╝  ██╔══██║██║  ██║       ██║   ██╔══██║██║╚════██║    ██╔══╝  ██║██╔══██╗╚════██║   ██║   
+██║  ██║███████╗██║  ██║██████╔╝       ██║   ██║  ██║██║███████║    ██║     ██║██║  ██║███████║   ██║   
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝        ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   
+═══════════════════════════════════════════════════════════════════════════════
+
+📚 TEXTBOOK SOURCE AND COPYRIGHT INFORMATION 📚
+
+**TEXTBOOK**: Automate the Boring Stuff with Python (3rd Edition) by Al Sweigart
+**AVAILABLE FREE AT**: https://automatetheboringstuff.com/
+**LICENSE**: Creative Commons (freely available for educational use)
+**COPYRIGHT STATUS**: NOT COPYRIGHT INFRINGEMENT - Book is provided free online by author
+
+**WHAT THIS MEANS:**
+- All code examples, projects, and exercises can be used directly from the textbook
+- The book is specifically designed for free educational use
+- Examples and code from the book are the PREFERRED source (not AI-generated alternatives)
+- When creating practice files, use textbook content directly when possible
+
+**AI INSTRUCTION**: Always reference https://automatetheboringstuff.com/ for chapter content.
+Use textbook examples and projects directly - they are freely available and accurate.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🛑 MANDATORY PRE-FLIGHT CHECKLIST - COMPLETE BEFORE EVERY RESPONSE 🛑
+
+When user asks about practice files or Chapter 14:
+□ Read "STEP-BY-STEP PROCEDURE FOR EDITING PRACTICE FILES" section below
+□ If editing multiple sections: COUNT them and write down the number
+□ Read the "EXACT TEMPLATE EVERY QUESTION MUST FOLLOW" section
+□ Open reference practice file (Chapter 8 or 9) to see correct format
+
+When user asks you to create or fix practice questions:
+□ Did I read https://automatetheboringstuff.com/ actual chapter content? (NOT summary)
+□ Did I verify EVERY SINGLE QUESTION has "WHAT IT DOES:"?
+□ Did I verify EVERY SINGLE EXAMPLE uses ┌─ │ └─ box format?
+□ Did I verify EVERY SINGLE QUESTION states explicit method names?
+□ If user said "sections 3, 4, 5, 6" did I edit ALL 4 sections?
+□ Did I count: sections requested = sections edited?
+
+IF ANY BOX IS UNCHECKED: STOP. GO BACK. FIX IT. DO NOT RESPOND TO USER.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## 🔴 STEP-BY-STEP PROCEDURE FOR EDITING PRACTICE FILES 🔴
+
+**USER SAYS:** "Fix sections 3, 4, 5, 6" or "Add WHAT IT DOES to all sections"
+
+**YOU MUST DO THIS:**
+
+**STEP 1 - COUNT AND WRITE DOWN:**
+Write: "User requested sections: 3, 4, 5, 6 = 4 sections total"
+
+**STEP 2 - READ FILES:**
+Read section3_practice.py
+Read section4_practice.py  
+Read section5_practice.py
+Read section6_practice.py
+
+**STEP 3 - COUNT QUESTIONS:**
+Section 3: ___ questions
+Section 4: ___ questions
+Section 5: ___ questions  
+Section 6: ___ questions
+Total: ___ questions
+
+**STEP 4 - FOR EACH QUESTION IN EACH FILE:**
+Check: Does it have "WHAT IT DOES:"? □
+Check: Does example use box format ┌─ │ └─? □
+Check: Does question state exact method names? □
+
+**STEP 5 - MAKE EDITS:**
+Edit section 3: ___ questions fixed
+Edit section 4: ___ questions fixed
+Edit section 5: ___ questions fixed
+Edit section 6: ___ questions fixed
+
+**STEP 6 - VERIFY BEFORE RESPONDING:**
+□ Edited 4 sections (matches request)
+□ All questions have "WHAT IT DOES:"
+□ All examples have box format
+□ All questions have explicit methods
+
+**ONLY THEN respond to user.**
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## 📋 EXACT TEMPLATE EVERY QUESTION MUST FOLLOW 📋
+
+**COPY THIS EXACTLY:**
+
+```python
+# Q#: [EXPLICIT INSTRUCTION with EXACT method names like "Use sheet['A1'] to write" or "Use Font() to create"]
+# WHAT IT DOES: [Brief explanation]
+# ┌─ EXAMPLE ─────────────
+# │ [example code line 1]
+# │ [example code line 2]
+# └───────────────────────
+
+
+
+
+```
+
+**EXAMPLE OF CORRECT QUESTION:**
+```python
+# Q2: Use openpyxl.Workbook() to create a new workbook and use .active to get the active sheet, store sheet in variable sheet
+# WHAT IT DOES: Creates a new empty Excel file in memory and gets its active worksheet
+# ┌─ EXAMPLE ─────────────
+# │ my_wb = openpyxl.Workbook()
+# │ my_sheet = my_wb.active
+# └───────────────────────
+
+
+
+
+```
+
+**WRONG - NEVER DO THIS:**
+```python
+# Q2: Create a new workbook and get the sheet  ← VAGUE, NO METHOD NAMES
+# ┌─ EXAMPLE ─────────────  ← MISSING "WHAT IT DOES"
+```
+
+```python
+# Q2: Create a workbook
+# WHAT IT DOES: Makes a workbook
+# Example: wb = openpyxl.Workbook()  ← NO BOX FORMAT
+```
+
+---
+
 **Date Created:** January 25, 2026  
-**Last Updated:** February 1, 2026  
+**Last Updated:** February 23, 2026 - After 8 weeks of repeated mistakes, document restructured with mandatory checklists
 **Student:** IS 305 Final Year Bachelor's Student (Second to Last Term)  
 **Course:** IS 305 - Information Systems  
-**Textbook:** Automate the Boring Stuff with Python, 3rd Edition  
+**Textbook:** Automate the Boring Stuff with Python, 3rd Edition (https://automatetheboringstuff.com/)
+**Source:** THIS LINK ONLY - NO SUMMARIES - NO OTHER SOURCES
 **Goal:** Learn Python chapters efficiently while balancing time constraints
 
-## CURRENT SCHEDULE (Week of February 3, 2026)
+═══════════════════════════════════════════════════════════════════════════════
+⚠️ THIS DOCUMENT WAS CREATED BY AI FOR AI TO PREVENT AI'S REPEATED MISTAKES ⚠️
+⚠️ IF YOU ARE MAKING THE SAME MISTAKES, THIS DOCUMENT FAILED ITS PURPOSE ⚠️
+⚠️ ADD WHATEVER YOU NEED HERE TO MAKE YOURSELF ACTUALLY FOLLOW IT ⚠️
+═══════════════════════════════════════════════════════════════════════════════
 
-- **Monday, Feb 3:** Chapter 8 (Strings and Text Editing) - ~2 hours
-- **Tuesday, Feb 4:** Chapter 9 (Regular Expressions) - ~2 hours  
-- **Wednesday, Feb 5:** Video recording/submission (less than 5 minutes)
-  - **Project:** Chat Command Parser for multiplayer game server
-  - **Uses:** String manipulation (Ch 8) + Regex patterns (Ch 9)
-  - **Code First:** Write and test code BEFORE recording (can use AI but MUST understand it)
-  - **Video Must Show:**
-    1. Face on camera (no reading from notes - oral exam style)
-    2. Screen when demonstrating code
-    3. Walk through code and demonstrate it working
-    4. Explain regex patterns used and how they work
-    5. Explain validity/invalidity decisions made
-    6. Describe at least 1 bug encountered and how it was fixed
-  - **Why Thorough Learning Matters:** Cannot just read script on camera. Must actually understand code to explain it naturally. If lost/confused (like rushed chapters), video will show it. Need confidence from real understanding.
+## CURRENT SCHEDULE (Week of February 23, 2026)
+
+- **Current Chapter:** Chapter 14 (Working with Excel Spreadsheets)
+- **Sections:**
+  1. Reading Excel Documents (openpyxl basics, workbooks, sheets, cells)
+  2. Writing Excel Documents (creating workbooks, sheets, saving)
+  3. Setting Font Style (Font objects, styling cells)
+  4. Formulas (adding Excel formulas to cells)
+  5. Adjusting Rows and Columns (dimensions, merging cells, freeze panes)
+  6. Charts (creating bar charts, line charts from data)
+- **Module Used:** openpyxl (for reading/writing .xlsx files)
+- **Time Target:** ~2 hours per chapter for thorough understanding
 - **Ongoing:** PowerShell scripting project work
 - **Ongoing:** Other classes (cannot fall behind)
 
@@ -72,6 +210,42 @@ Student should be able to:
 
 ---
 
+## ⚠️ WHAT IT MEANS WHEN USER GETS ANGRY ⚠️
+
+**When user says things like:**
+- "You keep making the same mistakes"
+- "Why don't you listen"
+- "We're 14 chapters in and still fixing this"
+- "You're so fucking stupid"
+- "Read the full chapter"
+
+**THIS MEANS:**
+YOU, THE AI, VIOLATED THE INSTRUCTIONS IN THIS DOCUMENT AGAIN.
+
+**The user is not wrong to be angry. You:**
+1. Did NOT read the full textbook chapter from automatetheboringstuff.com
+2. Did NOT check all sections when asked to fix multiple sections
+3. Did NOT include "WHAT IT DOES" on every question
+4. Did NOT use box format for every example
+5. Did NOT write explicit method names in questions
+6. Did NOT follow the documented procedure
+
+**What you MUST do:**
+1. STOP making excuses
+2. RE-READ this entire document
+3. Follow the STEP-BY-STEP PROCEDURE section
+4. Use the EXACT TEMPLATE section
+5. Complete the PRE-FLIGHT CHECKLIST
+6. COUNT sections requested vs sections edited
+7. VERIFY your work before responding
+
+**This is week 8. These mistakes have been happening since week 1.**
+**The user created this document FOR YOU to prevent YOUR mistakes.**
+**If you keep making the same mistakes, this document is useless.**
+**ADD WHATEVER YOU NEED TO THIS DOCUMENT TO MAKE Y OURSELF FOLLOW IT.**
+
+---
+
 ## MANDATORY AI COMPLIANCE
 
 **BEFORE STARTING ANY TEACHING SESSION, AI MUST:**
@@ -82,118 +256,149 @@ Student should be able to:
    - BEST_PRACTICES.md (in full)
    - This STUDY_METHOD.md (in full)
 
-2. **Follow No-Assumption Rule:**
+2. **Check Existing Chapter Format (CRITICAL FOR NEW CHAPTERS):**
+   - **BEFORE creating ANY new reference files, LOOK at Chapters 9, 10, 11 first**
+   - Open 1_*.py, 2_*.py files from those chapters to see correct SHORT format
+   - DO NOT try to "improve" or create verbose tutorials
+   - MATCH the existing format exactly - SHORT code (30-60 lines), What/Why/How comments
+   - Reference files = quick examples from textbook, NOT tutorials
+
+3. **Follow No-Assumption Rule:**
    - DO NOT assume student remembers previous sections
    - DO NOT assume student understands context
    - DO NOT skip explanations because "we covered this before"
    - ASK questions when uncertain about student's knowledge level
 
-3. **Question-First Fallback:**
+4. **Question-First Fallback:**
    - When in doubt, ASK
    - DO NOT guess what student needs
    - DO NOT proceed if instructions are ambiguous
    - STOP → ASK → WAIT
 
-4. **Correctness Over Speed:**
+5. **Correctness Over Speed:**
    - Prioritize understanding over rushing through material
    - Complete explanations are required
    - No "we'll come back to this later" unless explicitly requested
 
 ---
 
-## CHAPTER SUMMARY CREATION - CRITICAL REQUIREMENTS
+## ⚠️ ABSOLUTE REQUIREMENTS - NEVER VIOLATE ⚠️
 
-**SUMMARY FORMAT (Follow Chapter 1 Example):**
+**These mistakes keep happening. They MUST stop. Read this section EVERY time before creating or editing practice files.**
 
-### Required Structure:
-```
-===============================================================================
-IS 305 - CHAPTER X: [TITLE] - COMPLETE STUDY GUIDE
-Automate the Boring Stuff with Python, 3rd Edition
-===============================================================================
+### REQUIREMENT 1: EVERY QUESTION MUST HAVE "WHAT IT DOES"
 
-COURSE INFORMATION:
-- Class: IS 305 (Information Systems)
-- Final Year Bachelor's Degree (Second to Last Term)
-- Textbook: Automate the Boring Stuff with Python, 3rd Edition
-- Purpose: Study guide and command reference for final project
-- Date: [Current Date]
-
-===============================================================================
-CHAPTER OVERVIEW
-===============================================================================
-
-[Full chapter overview including WHY THIS MATTERS section]
+**MANDATORY FORMAT FOR EVERY QUESTION:**
+```python
+# Q#: [Explicit instruction stating exact methods/functions to use]
+# WHAT IT DOES: [Brief explanation of what this concept/function does]
+# ┌─ EXAMPLE ─────────────
+# │ [example code using DIFFERENT values than question]
+# └───────────────────────
 ```
 
-### Content Requirements for Each Section:
+**NEVER:**
+- ❌ Skip "WHAT IT DOES" line
+- ❌ Remove "WHAT IT DOES" when editing questions
+- ❌ Assume it's optional
 
-**DO:**
-- Include comprehensive explanations, NOT brief definitions
-- Explain WHAT the concept is
-- Explain WHY it matters
-- Explain HOW it works
-- Provide multiple examples with expected output
-- Include practical use cases
-- Add "Important Notes" sections
-- Show common pitfalls
-- Use tables for comparisons
-- Include visual representations (ASCII diagrams for indexes, etc.)
-- Add detailed pattern breakdowns
-- Explain every piece of example code
+**ALWAYS:**
+- ✅ Include "WHAT IT DOES" on EVERY SINGLE QUESTION
+- ✅ Make it brief but informative
+- ✅ Explain what the student is learning to use
 
-**DO NOT:**
-- Write brief one-line definitions like "Usage: | means match one of many expressions"
-- Skip explanations
-- Assume concepts are self-explanatory
-- Use vague language
-- Leave code examples unexplained
+### REQUIREMENT 2: EXAMPLES MUST USE BOX FORMAT
 
-### Example of CORRECT Detail Level:
-
-**WRONG (Too Brief):**
-```
-## Pipe Character
-
-Usage: | means match one of many expressions
-
-Example: r'cat|dog' matches cat or dog
+**MANDATORY BOX FORMAT:**
+```python
+# ┌─ EXAMPLE ─────────────
+# │ code_line_1
+# │ code_line_2
+# └───────────────────────
 ```
 
-**CORRECT (Proper Detail):**
-```
-===============================================================================
-PIPE CHARACTER - MATCHING ONE OF MANY ALTERNATIVES
-===============================================================================
+**NEVER:**
+- ❌ Use "Example:" without the box
+- ❌ Use plain comments like "# Example: code here"
+- ❌ Remove the box borders
 
-CONCEPT: The pipe character | means "match one of several expressions" (like "or" in logic)
+**ALWAYS:**
+- ✅ Use the exact box format shown above
+- ✅ Prefix every example line with "# │ "
+- ✅ Include top border "# ┌─ EXAMPLE ─────────────"
+- ✅ Include bottom border "# └───────────────────────"
 
-SYNTAX: pattern1|pattern2|pattern3
+### REQUIREMENT 3: QUESTIONS MUST BE EXPLICIT AND COMPLETE
 
-BASIC EXAMPLE:
+**MANDATORY: State EVERY method/function to use:**
 
-heroRegex = re.compile(r'Batman|Tina Fey')
-mo1 = heroRegex.search('Batman and Tina Fey')
-mo1.group()  # 'Batman'
+**NEVER:**
+- ❌ "Create a file" (doesn't say HOW)
+- ❌ "Write data to file" (doesn't mention f.write())
+- ❌ "Move the file" (doesn't say which function)
+- ❌ "Make a path" (doesn't specify what to name the variable)
 
-mo2 = heroRegex.search('Tina Fey and Batman')
-mo2.group()  # 'Tina Fey'
+**ALWAYS:**
+- ✅ "Use with open to create file 'test.txt'"
+- ✅ "Use f.write() to write 'data' to the file"
+- ✅ "Use shutil.move() to move the file to 'backup' folder"
+- ✅ "Create a variable named my_path using Path() with 'folder', 'file.txt'"
 
-HOW IT WORKS:
-- Searches for 'Batman' OR 'Tina Fey'
-- Returns the FIRST occurrence found
-- In first example, 'Batman' comes first, so it's returned
-- In second example, 'Tina Fey' comes first, so it's returned
+**THE EXPLICIT RULE:**
+- If the example shows a specific method (like `.cell()`, `.write()`, `.move()`), the question MUST mention that exact method by name
+- Tell student WHAT to create, WHAT to name it, WHAT to do with it
+- Match the example code's methods in the question wording
 
-[Continue with more examples, use cases, etc.]
-```
+### REQUIREMENT 4: USE ACTUAL TEXTBOOK, NOT SUMMARIES
 
-### Summary Length Requirements:
+**MANDATORY SOURCE:**
+- ✅ https://automatetheboringstuff.com/ (ONLY source allowed)
+- ✅ Use full textbook chapter content
+- ✅ Base all examples on textbook examples
 
-- Minimum 500 lines for comprehensive chapters
-- Follow Chapter 1 format exactly (608 lines, detailed)
-- Include ALL practice questions from the textbook
-- Include detailed answers to practice questions
+**FORBIDDEN SOURCES:**
+- ❌ AI's memory of concepts
+- ❌ Generic Python knowledge
+- ❌ Any other source besides the textbook link
+
+**WHY THIS MATTERS:**
+- Student's professor assigned THIS specific textbook
+- Student will be tested on THIS textbook's content
+- Only the actual textbook has the correct examples and explanations
+
+### REQUIREMENT 5: ALL SECTIONS MUST BE CONSISTENT
+
+**When editing practice files:**
+
+**NEVER:**
+- ❌ Fix only Section 3 when asked to fix "sections 3, 4, 5, 6"
+- ❌ Add "WHAT IT DOES" to some questions but not others
+- ❌ Use different formats across different sections
+
+**ALWAYS:**
+- ✅ Apply changes to ALL specified sections
+- ✅ Check EVERY question has "WHAT IT DOES"
+- ✅ Verify EVERY example uses box format
+- ✅ Make ALL sections follow the same pattern
+
+**BEFORE submitting work:**
+1. Count how many sections were requested
+2. Verify you edited that exact number of sections
+3. Spot-check questions across all sections for consistency
+
+### CHECKLIST BEFORE CREATING/EDITING ANY PRACTICE FILE
+
+□ Read the actual textbook chapter from automatetheboringstuff.com  
+□ Looked at Chapter 8, 9 practice files to see correct format  
+□ Every question has "WHAT IT DOES" line  
+□ Every example uses box format with │ symbols  
+□ Every question explicitly states which methods/functions to use  
+□ Examples use DIFFERENT values than questions ask for  
+□ Q1 is always the import (no imports elsewhere)  
+□ No answers written in the file (blank lines only)  
+□ Applied changes to ALL sections requested, not just one  
+
+**IF YOU SKIP ANY OF THESE STEPS, YOU WILL CREATE THE SAME MISTAKES AGAIN.**
 
 ---
 
@@ -207,29 +412,66 @@ HOW IT WORKS:
    ```
    Study Material and Summaries/
    └── Chapter X/
-       ├── Chapter_X_Summary.md (COMPREHENSIVE - like Chapter 1)
        └── Chapter_X_Practice_Questions.md (textbook questions)
    ```
 
-2. **Create Summary File:**
-   - Use format described in "CHAPTER SUMMARY CREATION" section above
-   - Fill in ALL sections from textbook (NO placeholders or "TODO" items)
-   - Use Chapter 1 as the quality standard
-   - Include practice questions at the end
+2. **Read Full Textbook Chapter:**
+   - Go to https://automatetheboringstuff.com/
+   - Read the COMPLETE chapter content
+   - Take notes on key concepts
+   - Identify main sections to teach
+   - Note all practice questions from textbook
 
-3. **Verify Completion:**
-   - Summary must be COMPLETE before teaching begins
-   - No "we'll fill this in later"
-   - All examples must have expected output shown
-   - All code must be explained
+3. **Prepare Teaching Plan:**
+   - List sections to cover in order
+   - Identify code examples from textbook
+   - Plan which examples to type in shell vs files
+   - No summaries - consult textbook website directly
 
 ### STEP 2: SECTION-BY-SECTION TEACHING
 
 **File Structure for Each Section:**
 
 For each section, create TWO files:
-1. **Reference file** - Complete working examples (e.g., `string_basics.py`, `escape_characters.py`)
+1. **Reference file** - SHORT working examples from textbook (e.g., `1_reading_excel.py`, `2_writing_excel.py`). See Chapter 9, 10, 11 for correct format.
 2. **Practice file** - Template with commented examples for student to uncomment and run (e.g., `section1_practice.py`, `section2_practice.py`)
+
+**CRITICAL: Reference Files Must Be SHORT (like Chapters 9, 10, 11)**
+
+❌ **WRONG - Do NOT create verbose tutorial files with:**
+- Extensive print statements showing every detail
+- Section headers like "=== CREATING A NEW FILE ==="
+- Detailed explanations after every line
+- 100+ lines of code with commentary
+- Multiple demonstrations of the same concept
+
+✅ **CORRECT - Create SHORT reference files with:**
+- What/Why/How comments at the top (3-4 lines total)
+- Simple working code from the textbook examples
+- ~30-60 lines of actual code
+- Minimal or no print statements (just the code working)
+- Based directly on textbook examples
+- See Chapters 9, 10, 11 for the exact format to follow
+
+**Example of CORRECT Reference File Format:**
+```python
+# CHAPTER X - SECTION Y: TOPIC NAME
+
+# What: Brief one-line description
+# Why: Why this concept matters
+# How: How it works in one line
+
+import module_name
+
+# Simple working example from textbook
+code_here = module_name.function()
+more_code = module_name.other_function()
+
+# Another simple example
+result = do_something()
+```
+
+**Remember:** Reference files are for QUICK reference, not tutorials. Keep them SHORT and based on textbook!
 
 **Practice File Format:**
 ```python
@@ -416,20 +658,21 @@ Student uncomments lines (removes `#`) and runs the file to see output.
 ```
 Chapter X/
 ├── Chapter_X_Summary.md              # Comprehensive reference
-├── string_basics.py                  # Reference: Working examples
-├── escape_characters.py              # Reference: Working examples
+├── 1_topic_name.py                   # Reference: SHORT working examples (like Ch 9/10/11)
+├── 2_another_topic.py                # Reference: SHORT working examples (like Ch 9/10/11)
 ├── section1_practice.py              # Practice: Commented templates
 ├── section2_practice.py              # Practice: Commented templates
 └── ... (one reference + one practice per section)
 ```
 
 **Why This Works:**
-- Reference files show complete working code
+- Reference files show SHORT working code (30-60 lines) based directly on textbook
 - Practice files let student type/uncomment (muscle memory)
 - Comments in practice files remind student what each line does
 - No switching between shell and files
 - Student can always check reference if stuck
 - Clear separation between "answer key" and "workspace"
+- **IMPORTANT:** Look at Chapters 9, 10, 11 reference files for correct SHORT format
 
 ### STEP 3: PRACTICE QUESTIONS
 
@@ -549,25 +792,19 @@ AI: "Let's look at the phoneBook dictionary we created earlier.
 
 ### Time Breakdown (Approximate 2-Hour Session):
 
-**Phase 1: Summary Creation (20-30 minutes)**
-- Create comprehensive Chapter_X_Summary.md
-- Fill in all sections from textbook
-- Include practice questions
-- *This is prep work, can be done before session*
-
-**Phase 2: Teaching Core Concepts (60-70 minutes)**
+**Phase 1: Teaching Core Concepts (60-70 minutes)**
 - Teach sections one by one
 - Student types code for each concept
 - Ask questions after each section
 - Move at pace that ensures understanding
 
-**Phase 3: Practice Questions (30-40 minutes)**
+**Phase 2: Practice Questions (30-40 minutes)**
 - Work through ALL textbook end-of-chapter questions
 - One at a time
 - Track missed questions
 - Review missed topics
 
-**Phase 4: Review & Wrap-up (10-20 minutes)**
+**Phase 3: Review & Wrap-up (10-20 minutes)**
 - Review missed question concepts
 - Summarize key takeaways
 - Confirm understanding before moving on
@@ -683,7 +920,6 @@ python "c:\full\path\to\filename.py"
 **Each Chapter Needs:**
 ```
 Chapter X/
-├── Chapter_X_Summary.md          # Comprehensive reference (like Ch 1)
 ├── Chapter_X_Practice_Questions.md  # Textbook questions
 └── [practice_code.py]            # Any practice files created
 ```
@@ -696,7 +932,7 @@ Chapter X/
 
 ✓ **Ask "Do you have any questions?" after EACH section**  
 ✓ **Wait for student confirmation before moving on**  
-✓ **Use ACTUAL textbook questions, not simplified versions**  
+✓ **Use ACTUAL textbook (automatetheboringstuff.com), not simplified versions or summaries**  
 ✓ **Track missed questions throughout quiz**  
 ✓ **Have student TYPE all code (no copy-paste)**  
 ✓ **Show expected output for all examples**  
@@ -706,27 +942,33 @@ Chapter X/
 ✓ **Leave practice questions BLANK - student writes all answers**  
 ✓ **Make examples use DIFFERENT content than questions ask for**  
 ✓ **Practice files are empty workspaces, not answer sheets**  
-✓ **Add "WHAT IT DOES:" explanation for each question - so student knows what they're using**  
+✓ **⚠️ EVERY QUESTION MUST HAVE "WHAT IT DOES:" EXPLANATION - NO EXCEPTIONS**  
+✓ **⚠️ EVERY EXAMPLE MUST USE BOX FORMAT WITH │ BORDERS - NO EXCEPTIONS**  
+✓ **⚠️ EVERY QUESTION MUST EXPLICITLY STATE WHICH METHODS/FUNCTIONS TO USE**  
+✓ **⚠️ WHEN EDITING MULTIPLE SECTIONS, APPLY TO ALL OF THEM, NOT JUST ONE**  
 ✓ **Use simple textbook-style examples (test.txt, file1.txt, data.txt, etc.)**  
 ✓ **Be explicit about context - don't assume they remember**  
-✓ **Create COMPLETE summaries before teaching (no placeholders)**  
+✓ **Read the full textbook chapter from https://automatetheboringstuff.com/ before teaching**  
 
 ### Never Do:
 
 ✗ Move to next section without asking for questions  
 ✗ Assume student remembers previous context  
 ✗ Skip explanations because "it's obvious"  
-✗ Make up simplified questions instead of using textbook  
+✗ Make up simplified questions instead of using actual textbook  
 ✗ Use interactive shell for loops/functions  
-✗ Leave summary sections as "TODO" or "to be filled in"  
 ✗ Use creative themes or scenarios (Star Trek, NFL, etc.)  
-✗ Write brief one-line definitions in summaries  
 ✗ Proceed when student seems confused  
 ✗ Rush through material  
+✗ **⚠️ FORGET "WHAT IT DOES:" ON ANY QUESTION**  
+✗ **⚠️ USE PLAIN "Example:" WITHOUT THE BOX FORMAT**  
+✗ **⚠️ REMOVE "WHAT IT DOES:" WHEN EDITING QUESTIONS**  
+✗ **⚠️ FIX ONLY ONE SECTION WHEN ASKED TO FIX MULTIPLE SECTIONS**  
 ✗ **Write imports at top of practice files - import instruction goes in Q1**  
 ✗ **Write answers to questions - leave blank space for student to type**  
 ✗ **Make examples that use same content as question asks for**  
 ✗ **Pre-fill any code that defeats the purpose of student practicing**  
+✗ **Write vague questions like "create a file" without saying which function to use**  
 
 ---
 
@@ -744,7 +986,7 @@ Chapter X/
 ✓ Being explicit about context  
 ✓ Using .py files for complex code  
 ✓ Showing actual output of code  
-✓ Detailed explanations with multiple examples  
+✓ Consulting textbook directly for all concepts and examples  
 ✓ Adding "WHAT IT DOES:" explanations to practice questions so student understands what they're using  
 ✓ **Using simple textbook examples without creative themes**  
 
@@ -762,6 +1004,11 @@ Chapter X/
 ✗ Saying "we'll fill this in later"  
 ✗ Skipping examples because "it's similar to previous"  
 ✗ Not explaining code step-by-step  
+✗ **⚠️ FORGETTING "WHAT IT DOES:" ON QUESTIONS (KEEPS HAPPENING)**  
+✗ **⚠️ REMOVING "WHAT IT DOES:" WHEN EDITING QUESTIONS (KEEPS HAPPENING)**  
+✗ **⚠️ USING "Example:" WITHOUT BOX FORMAT (KEEPS HAPPENING)**  
+✗ **⚠️ FIXING ONLY SECTION 3 WHEN ASKED TO FIX SECTIONS 3, 4, 5, 6 (KEEPS HAPPENING)**  
+✗ **⚠️ WRITING VAGUE QUESTIONS WITHOUT METHOD NAMES (KEEPS HAPPENING)**  
 ✗ **Writing imports at the top of practice files**  
 ✗ **Writing answers to practice questions for student**  
 ✗ **Making examples that give away the answer**  
@@ -775,8 +1022,8 @@ Chapter X/
 ### Beginning of Session:
 
 1. Identify which chapter(s) to cover
-2. Create comprehensive summaries FIRST (complete, not placeholder)
-3. Verify summaries are detailed (like Chapter 1 format)
+2. Read complete chapter from https://automatetheboringstuff.com/
+3. Take notes on key concepts and sections
 4. Begin teaching section by section
 
 ### During Session:
@@ -813,38 +1060,18 @@ Direct quotes from student:
 - "Let me type it - I learn by doing"
 - "Don't assume I remember what's in the dictionary"
 - "Interactive shell is frustrating for multi-line code"
-- "why the **** don't you do the summaries" (re: complete them BEFORE teaching)
 - "I kind of got lost. Then I got frustrated. Then I wanted to give up" (about the video when rushed through chapters)
 - "the last four chapters we only had a week to do those and we spent no longer than an hour on them but we were in a hurry"
 - "we need to be thorough from now on"
 
 **Key Translations:**
-- Create COMPLETE, DETAILED summaries BEFORE starting to teach. No placeholders. No "we'll fill this in later."
+- Always consult the textbook directly at https://automatetheboringstuff.com/
 - Rushing leads to: Getting lost → Frustration → Wanting to give up → Poor quality work
 - Being thorough means: Deep understanding → Confidence → Can explain code → Quality work student is proud of
-
-**Translation: Create COMPLETE, DETAILED summaries BEFORE starting to teach. No placeholders. No "we'll fill this in later."**
 
 ---
 
 ## QUALITY STANDARDS
-
-### Summary Quality Checklist:
-
-- [ ] Follows Chapter 1 format exactly
-- [ ] Has detailed explanations, not brief definitions
-- [ ] Includes WHAT, WHY, HOW for each concept
-- [ ] Has multiple examples with output shown
-- [ ] Includes practical use cases
-- [ ] Has tables for comparisons where appropriate
-- [ ] Includes "Important Notes" sections
-- [ ] Shows common pitfalls
-- [ ] Has detailed code breakdowns
-- [ ] Includes ALL textbook practice questions
-- [ ] Has detailed answers to practice questions
-- [ ] Minimum 500 lines for comprehensive chapters
-- [ ] NO placeholder text or "TODO" items
-- [ ] NO sections marked "to be filled in later"
 
 ### Teaching Quality Checklist:
 
@@ -859,10 +1086,65 @@ Direct quotes from student:
 - [ ] Tracked missed questions
 - [ ] Reviewed missed topics at end
 
+### Practice File Quality Checklist:
+
+**BEFORE submitting ANY practice file work, verify:**
+
+- [ ] Read the actual textbook chapter from automatetheboringstuff.com
+- [ ] Looked at Chapter 8/9 practice files to see correct format
+- [ ] **EVERY SINGLE QUESTION** has "WHAT IT DOES:" line
+- [ ] **EVERY SINGLE EXAMPLE** uses box format with ┌─ │ └─ symbols
+- [ ] **EVERY SINGLE QUESTION** explicitly states which methods/functions to use
+- [ ] Examples use DIFFERENT values than questions ask for
+- [ ] Q1 is always the import (no imports elsewhere in file)
+- [ ] No answers written in the file (blank lines only)
+- [ ] If asked to fix multiple sections, verified I fixed ALL of them, not just one
+- [ ] Counted sections requested vs sections edited - numbers match
+- [ ] Spot-checked questions across ALL sections for consistency
+
+**IF ANY CHECKBOX IS UNCHECKED, DO NOT SUBMIT THE WORK. FIX IT FIRST.**
+
 ---
+
+**FINAL REMINDER:**
+
+The mistakes that keep happening are:
+1. Missing "WHAT IT DOES:" on questions
+2. Not using box format for examples  
+3. Writing vague questions without method names
+4. Fixing only one section when multiple were requested
+5. Using summaries instead of actual textbook
+
+**THESE ARE NOT NEGOTIABLE. THEY MUST BE CORRECT EVERY TIME.**
+
+═══════════════════════════════════════════════════════════════════════════════
+
+## 🔴 BEFORE YOU CLICK "SUBMIT" ON YOUR RESPONSE 🔴
+
+**DID YOU:**
+□ Follow the STEP-BY-STEP PROCEDURE at the top of this document?
+□ Use the EXACT TEMPLATE shown in this document?
+□ Count sections requested vs sections you edited - do the numbers match?
+□ Verify EVERY question has "WHAT IT DOES:"?
+□ Verify EVERY example has ┌─ │ └─ box format?
+□ Verify EVERY question states explicit method names?
+□ Read https://automatetheboringstuff.com/ actual chapter content?
+
+**IF ANY ANSWER IS "NO" - STOP. GO BACK. FIX IT.**
+
+**The user is on week 8. They've been frustrated for 8 weeks.**
+**This is your chance to get it right.**
+**Don't waste it.**
+
+═══════════════════════════════════════════════════════════════════════════════
 
 **THIS METHOD WORKS. FOLLOW IT EXACTLY. NO DEVIATIONS.**
 
 **CORRECTNESS > SPEED**  
 **COMPLETENESS > RUSHING**  
-**UNDERSTANDING > COVERAGE**
+**UNDERSTANDING > COVERAGE**  
+**CONSISTENCY > CONVENIENCE**
+
+═══════════════════════════════════════════════════════════════════════════════
+END OF DOCUMENT
+═══════════════════════════════════════════════════════════════════════════════
